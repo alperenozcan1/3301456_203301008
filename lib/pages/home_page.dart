@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+
 import 'package:futkolik_proje/pages/popupmenu_pages/club_page.dart';
 import 'package:futkolik_proje/pages/popupmenu_pages/point_page.dart';
 import 'package:futkolik_proje/pages/popupmenu_pages/score_page.dart';
@@ -35,9 +34,8 @@ class _HomePageState extends State<HomePage> {
         var oHaber=haberler[index];
         return  ListTile(
             title: Text(oHaber.aciklama,style: TextStyle(fontSize: 20,),),
-            tileColor:renkOlustur(index),
-          );
-        
+            tileColor:renkOlustur(index), 
+        );
       },
       itemCount: haberler.length,
       // separatorBuilder: (context, index) {
